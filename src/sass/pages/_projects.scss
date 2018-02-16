@@ -1,0 +1,36 @@
+section.recent-projects {
+    padding: 50px 0;
+    .slide-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .slide {
+            width: 30%;
+            margin-top: 30px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    h2 {
+        @include title;
+        padding-bottom: 10px;
+    }
+      nav{
+    margin-top: 30px;
+          margin-bottom: 30px;
+    text-align: right;
+    a{
+      padding: 5px;
+      margin: 0 25px;
+      transition: .1s;
+      @include text-regular;
+      &:hover{
+       border-bottom: 2.5px solid $color-blue;
+      }
+
+    }
+  }
+
+}

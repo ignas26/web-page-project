@@ -1,0 +1,102 @@
+footer {
+    .blueline-2 {
+        background: rgb(34, 167, 240);
+        padding: 30px 30px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+                @include title;
+                color: white;
+                font-size: 24px;
+                z-index: 0;
+            }
+            .button {
+                @include button(#000);
+                color: white;
+                border-color: white;
+                border-width: 2px;
+
+            }
+        }
+    }
+
+
+    section.footer-list {
+        background-color: rgb(22, 22, 22);
+        padding: 50px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper {
+            width: 20%;
+        }
+        h3 {
+            color: $color-blue;
+            text-transform: uppercase;
+            text-align: left;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        li {
+            @include text-regular;
+            color: #fff;
+            text-align: left;
+            transition: .4s;
+            margin-bottom: 15px;
+            &:before {
+                content: '\f054';
+                font-family: FontAwesome;
+                display: inline-block;
+                margin-right: 5px;
+                color: $color-blue;
+                opacity: 0;
+            }
+            &:hover {
+                color: $color-blue;
+            }
+            &:hover:before {
+                color: #fff;
+                animation-name: ball-3;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+            }
+        }
+        .address:before {
+            content: '\f041';
+            opacity: 1;
+        }
+        .mobile:before {
+            content: '\f095';
+            opacity: 1;
+        }
+        .email:before {
+            content: '\f0e0';
+            opacity: 1;
+        }
+        p {
+            @include text-regular;
+            color: #fff;
+            line-height: 1.4;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+    }
+
+
+
+    section.blackline {
+        background-color: #000;
+        padding: 30px 0;
+    }
+    p {
+        @include text-regular;
+        color: #fff;
+    }
+    .fa-heart {
+        color: #b30000;
+    }
+}

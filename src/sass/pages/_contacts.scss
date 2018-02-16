@@ -1,0 +1,47 @@
+.contact-us{
+    padding: 50px 0;
+    h2 {
+          
+        @include title;
+        padding-bottom: 7px;
+    
+    
+    }
+    .placeholders{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 45px;
+        .wrapper{
+            width: 50%;
+        }
+    input{
+            font-size:16px;
+        padding-bottom: 15px;
+        }
+
+input::placeholder {
+    color: 	black;
+    font-weight: 400;
+    margin-right: 250px;
+    
+    
+}
+
+:placeholder-shown {  
+width: 530px;
+height: 30px;
+background: #fff;
+    border: 1px solid rgb(217, 217, 217);
+
+}
+        .message{
+            padding-bottom: 150px;
+        }
+    }
+    .button{
+        @include button(#fff);
+        background-color: #22a7f0;
+    }
+}
